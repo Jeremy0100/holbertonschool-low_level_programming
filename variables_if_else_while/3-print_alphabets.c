@@ -1,14 +1,22 @@
 #include <stdio.h>
 
-int main (void)
+/**
+ * main - Entry point
+ *
+ * Description: 'the program's description'
+ *
+ * Return: Always 0 (Success)
+ */
+
+int main(void)
 {
-  char letter;
+char letter;
 
-  for (letter = 'a'; letter <= 'z'; letter++)
-    putchar(letter);
+for (letter = 'a'; letter <= 'z'; letter++)
+putchar(letter);
 
-  for (letter = 'A'; letter <= 'Z'; letter++)
-    putchar(letter);
+for (letter = 'A'; letter <= 'Z'; letter++)
+putchar(letter);
 
 putchar('\n');
 
