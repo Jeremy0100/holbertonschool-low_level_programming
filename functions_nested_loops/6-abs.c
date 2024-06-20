@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * print_sign - begining
+ * _abs - begining
  *
  * Description: program
  *
