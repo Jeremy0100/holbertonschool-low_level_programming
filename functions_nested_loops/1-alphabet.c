@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * print_alphabet - begining
+ *
+ * Description: program
+ *
+ */
+
 
 void print_alphabet(void)
 {
