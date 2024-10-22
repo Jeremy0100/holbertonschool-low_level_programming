@@ -2,6 +2,16 @@
 #include <time.h>
 #include <stlib.h>
 
+/**
+* main - Entry point
+*
+* Description: assign a random number to variable n each time executed
+*
+* Return: Always 0 (Success)
+*
+*/
+
+
 int main(void)
 {
 	int n;
