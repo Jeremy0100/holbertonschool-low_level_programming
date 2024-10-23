@@ -5,7 +5,7 @@
 *
 * Description: Prints the alphabet, in lowercase followed by new line
 *
-* Return: nothing
+* Return: Nothing
 *
 */
 
