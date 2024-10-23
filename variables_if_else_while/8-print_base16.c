@@ -22,7 +22,7 @@ putchar(number + '0');
 }
 else
 {
-putchar(number + 87);
+putchar(number + 97);
 }
 }
 putchar('\n');
