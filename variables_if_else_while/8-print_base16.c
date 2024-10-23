@@ -1,4 +1,4 @@
-#include stdio.h
+#include <stdio.h>
 
 /**
 * main - Entry point
@@ -22,7 +22,7 @@ putchar(number + '0');
 }
 else
 {
-putchar(number + 97);
+putchar(number + 87);
 }
 }
 putchar('\n');
