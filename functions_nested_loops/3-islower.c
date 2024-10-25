@@ -5,11 +5,13 @@
 *
 * Description: checks for lowercase character
 *
+* @c: c variable
+*
 * Return: Nothing
 *
 */
 
-int _islower(int c)
+int _islower(int c)  /* c variable */
 {
 if (c >= 'a' && c <= 'z')
 {
