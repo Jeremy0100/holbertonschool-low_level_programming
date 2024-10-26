@@ -6,7 +6,7 @@
 *
 * Description: Prints the 9 times table, starting with 0
 *
-* @i @j: multiplication
+* @i , @j: multiplication
 *
 * Return: Nothing
 *
