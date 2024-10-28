@@ -2,11 +2,13 @@
 #include "main.h"
 
 /**
-* print_to_98 - prints all natural number from n to 98
+* print_triangle - prints all natural number from n to 98
 *
 * Description: Prints all natural number from n to 98, followed by new line
 *
-* @n: Starting number
+* @i , @j , @k: triangle variables
+*
+* @size: size
 *
 * Return: Nothing
 *
