@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-* print_to_98 - prints all natural number from n to 98
+* _isupper - Checks for uppercase character
 *
 * Description: Checks for uppercase character
 *
