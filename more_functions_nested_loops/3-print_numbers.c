@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
-* main - prints the numbers from 0 to 9
+* print_numbers - prints the numbers from 0 to 9
 *
 * Description: Prints the numbers from 0 to 9 followed by new line
 *
@@ -10,8 +10,11 @@
 *
 */
 
-int main(void)
+void print_numbers(void)
 {
-	print_numbers();
-	return (0);
+	char c;
+
+	for (c = '0'; c <= '9'; c++)
+	_putchar(c);
+	_putchar('\n');
 }
