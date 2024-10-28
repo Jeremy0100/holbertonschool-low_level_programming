@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
-* main - prints the numbers from 0 to 9
+* print_most_numbers - prints the numbers from 0 to 9
 *
 * Description: Prints the numbers from 0 to 9
 *
@@ -10,8 +10,12 @@
 *
 */
 
-int main(void)
+void print_most_numbers(void)
 {
-	print_most_numbers();
-	return (0);
+	char c;
+
+	for (c = '0'; c <= '9'; c++)
+		if (c != '2' && c != '4')
+			_putchar(c);
+	_putchar('\n');
 }
