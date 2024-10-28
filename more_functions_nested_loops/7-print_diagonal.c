@@ -24,8 +24,8 @@ void print_diagonal(int n)
 		{
 			if (i == j)
 			{
-				_putchar('\\')
-				_putchat('\n')
+				_putchar('\\');
+				_putchar('\n');
 			}
 			else
 			{
