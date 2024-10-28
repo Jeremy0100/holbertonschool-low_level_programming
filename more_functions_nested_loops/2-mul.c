@@ -6,7 +6,8 @@
 *
 * Description: multiplies two integers
 *
-* @a , @b: Starting
+* @a: first integer
+* @b: second integer
 *
 * Return: Nothing
 *
