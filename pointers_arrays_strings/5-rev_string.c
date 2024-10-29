@@ -27,4 +27,3 @@ void rev_string(char *s)
 		s[length - i - 1] = c;
 	}
 }
-}
