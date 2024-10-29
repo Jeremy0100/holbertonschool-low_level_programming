@@ -6,7 +6,8 @@
 *
 * Description: Swaps the values of two integers.
 *
-* @a @b: Starting
+* @a: Last
+* @b: Starting
 *
 * Return: Always 0
 *
@@ -14,3 +15,8 @@
 
 
 void swap_int(int *a, int *b);
+{
+	int tmp = *b;
+	*b = *a;
+	*a = tmp;
+}
