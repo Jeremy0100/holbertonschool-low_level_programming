@@ -4,7 +4,7 @@
 /**
 * puts_half - prints half of a string
 *
-* Description: Prints half of a string followed by a new line
+* Description: Prints half of a string followed by a new line.
 *
 * @str: Starting
 *
