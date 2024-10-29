@@ -2,9 +2,9 @@
 #include "main.h"
 
 /**
-* print_rev - prints a string in reverse
+* print_rev - prints a string in reverse.
 *
-* Description: Prints a string in reverse followed by a new line
+* Description: Prints a string in reverse followed by a new line.
 *
 * @s: Starting
 *
