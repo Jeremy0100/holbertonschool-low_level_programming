@@ -4,7 +4,7 @@
 /**
 * reset_to_98 - takes a pointer to an int as parameter
 *
-* Description: takes pointer to an in and updates the value to 98
+* Description: takes pointer to an int and updates the value to 98.
 *
 * @n: Starting number
 *
