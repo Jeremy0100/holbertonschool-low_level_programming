@@ -4,10 +4,10 @@
 /**
 * _strcpy - copies the string pointed to by src
 *
-* Description: ...including the terminating null byte \0 to buffer pointed to by dest
+* Description:including the terminating null byte\0 to buffer pointed toby dest
 *
-* @: Starting
-*
+* @dest: pointed
+* @src: Starting
 * Return: Always 0
 *
 */
