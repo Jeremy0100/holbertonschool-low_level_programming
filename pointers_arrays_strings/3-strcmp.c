@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
-* main - compares two strings
+* _strcmp - compares two strings
 *
 * Description: Compares two strings.
 *
