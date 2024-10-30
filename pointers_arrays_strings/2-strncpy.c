@@ -8,7 +8,7 @@
 *
 * @n: Starting
 * @src: the source string
-* @dest: The destination 
+* @dest: The destination
 * Return: Always 0
 *
 */
