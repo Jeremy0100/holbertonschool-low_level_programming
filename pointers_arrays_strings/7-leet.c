@@ -1,5 +1,5 @@
 /**
-* leet - encodes a string into 1337
+* leet - Encodes a string into 1337.
 *
 * Description: Encodes a string into 1337.
 *
