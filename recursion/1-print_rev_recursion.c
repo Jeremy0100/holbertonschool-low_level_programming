@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
  * _print_rev_recursion - print in rev
  * @s: pointer to a string
