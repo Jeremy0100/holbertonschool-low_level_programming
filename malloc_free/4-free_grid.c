@@ -4,7 +4,7 @@
 /**
  * free_grid - free a 2D grid of integers.
  * @grid: pointer to grid
- * @height: The height of the grid.
+ * @height: The height
  *
  * Return: void
  */
