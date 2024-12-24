@@ -5,48 +5,41 @@
  * @str: string
  * Return: node
  */
+
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *node, *tail;
+	list_t *other_node;
+	list_t *end_node;
 
-	node = malloc(sizeof(list_t));
-	if (node != NULL)
+	while (!(other_node = malloc(sizeof(list_t))) || !head || !str)
 	{
-		node->str = strdup(str);
-		node->len = _strlen(str);
-		node->next = NULL;
+		free(other_node);
+		return (NULL);
 	}
+
+	other_node->str = strdup(str);
+	if (!other_node->str)
+	{
+		free(other_node);
+		return (NULL);
+	}
+
+	other_node->len = strlen(str);
+	other_node->next = NULL;
 
 	if (*head != NULL)
 	{
-		tail = *head;
-
-		while (tail->next != NULL)
+		end_node = *head;
+		while (end_node->next)
 		{
-			tail = tail->next;
+			end_node = end_node->next;
 		}
-
-		tail->next = node;
+		end_node->next = other_node;
 	}
-
 	else
 	{
-		*head = node;
+		*head = other_node;
 	}
-	return (*head);
-}
 
-/**
- * _strlen - count length of string
- * @s: pointer to string
- * Return: count
- */
-int _strlen(const char *s)
-{
-	int i;
-
-	for (i = 0; *(s + i) != '\0'; ++i)
-		;
-
-	return (i);
+	return (other_node);
 }
