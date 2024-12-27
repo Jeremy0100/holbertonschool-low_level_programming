@@ -1,5 +1,7 @@
 #include "main.h"
 #include <string.h>
+#include <stdlib.h>
+
 /**
  * string_nconcat - concat string
  * @s1: pointer to char
