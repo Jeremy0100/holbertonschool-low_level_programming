@@ -1,45 +1,62 @@
 #include "dog.h"
-#include <string.h>
+#include <stdlib.h>
+
 /**
- * new_dog - dynamicly allocats a struct
- * @name: name
- * @age: age
- * @owner: owner
- * Return: return a pointer to dynamicly allocated struct
+ * _strcopy - copy read-only data to mutable.
+ * @dst: pointer to copy char to.
+ * @src: read-only data.
  */
+void _strcopy(char *dst, char *src)
+{
+	int i;
+
+	for (i = 0; src[i]; i++)
+		dst[i] = src[i];
+	dst[i] = '\0';
+}
+
+/**
+ * new_dog - create a new dog.
+ * @name: name of the dog
+ * @age: age of the dog
+ * @owner: owner of the dog
+ *
+ * Return: pointer to the new dog
+ */
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *new_dogj;
+	dog_t *dogj;
+	int a, b;
 
-	new_dogj = malloc(sizeof(dog_t));
 
-	if (new_dogj != NULL)
+	for (a = 0; name[a]; a++)
+		;
+	for (b = 0; owner[b]; b++)
+		;
+
+
+	dogj = malloc(sizeof(dog_t));
+	if (dogj == NULL)
+		return (NULL);
+
+
+	dogj->name = malloc(a + 1);
+	dogj->owner = malloc(b + 1);
+
+	if (dogj->name == NULL || dogj->owner == NULL)
 	{
 
-		new_dogj->name = malloc(strlen(name) + 1);
-		if (name == NULL)
-		{
-			free(new_dogj->name);
-			free(new_dogj);
-			return (NULL);
-		}
-		new_dogj->owner = malloc(strlen(owner) + 1);
-		if (new_dogj->owner == NULL)
-		{
-			free(new_dogj->name);
-			free(new_dogj->owner);
-			free(new_dogj);
-			return (NULL);
-		}
-
-		new_dogj->name = strcpy(new_dogj->name, name);
-		new_dogj->owner = strcpy(new_dogj->owner, owner);
-		new_dogj->age = age;
-		return (new_dogj);
-	}
-	else
-	{
-		free(new_dogj);
+		free(dogj->name);
+		free(dogj->owner);
+		free(dogj);
 		return (NULL);
 	}
+
+
+	_strcopy(dogj->name, name);
+	_strcopy(dogj->owner, owner);
+	dogj->age = age;
+
+	return (dogj);
 }
