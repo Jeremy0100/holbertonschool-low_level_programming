@@ -12,14 +12,14 @@
 
 int main(void)
 {
-int i;
-char chainput[] = "_putchar";
+	int i;
+	char chainput[] = "_putchar";
 
-for (i = 0; i <= 7; i++)
-{
-_putchar(chainput[i]);
-}
+	for (i = 0; i <= 7; i++)
+	{
+		_putchar(chainput[i]);
+	}
 
-_putchar('\n');
-return (0);
+	_putchar('\n');
+	return (0);
 }
