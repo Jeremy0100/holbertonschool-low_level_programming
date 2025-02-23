@@ -3,7 +3,8 @@
 /**
 * _isalpha - check if alphabet
 *
-* Description: checks for lowercase character
+* Description: Checks for lowercase character, if alphabet is
+*		rather lowercase or uppercase.
 *
 * @c: c variable
 *
