@@ -4,7 +4,7 @@
 /**
 * print_diagonal - draws a diagonal line
 *
-* Description: Draws a diagonal line on the terminal
+* Description: Draws a diagonal line on the terminal.
 *
 * @n: Starting
 *
