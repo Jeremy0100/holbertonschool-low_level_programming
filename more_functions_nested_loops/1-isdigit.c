@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-* _isupper - Checks for a digit (0 through 9)
+* _isdigit - Checks for a digit (0 through 9)
 *
 * Description: Checks for a digit (0 through 9).
 *
