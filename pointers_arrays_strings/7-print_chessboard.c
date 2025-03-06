@@ -2,7 +2,7 @@
 
 /**
  * print_chessboard - function that print the chessboard
- * @plateau: array representing the chessboard
+ * @board: array representing the chessboard
  *
  * prints the chessboard
  *
