@@ -1,8 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _print_rev_recursion - print in rev
- * @s: pointer to a string
+ * _print_rev_recursion - Print in rev
+ * @s: Pointer to a string
  */
 
 void _print_rev_recursion(char *s)
