@@ -2,8 +2,7 @@
 #include <stdio.h>
 
 /**
- * _puts_recursion - Puts with recursion, prints a string
- *			followed by new line.
+ * _puts_recursion - Puts with recursion, prints a string.
  * @s: pointer char
  * Return: 0
  */
