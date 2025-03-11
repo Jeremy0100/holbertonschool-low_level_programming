@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * _strdup - copy string
+ * _strdup - Copy string
  * @str: char pointer
  * Return: char pointer
  */
