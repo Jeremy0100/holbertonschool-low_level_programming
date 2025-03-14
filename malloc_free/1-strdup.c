@@ -1,15 +1,13 @@
-#include <string.h>
-#include <stdio.h>
 #include "main.h"
-
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * _size - Calculates length
- * @j: replace strlen
- * Return: j
+ * @j: A pointer to the string.
+ *
+ * Return: The length of the string.
  */
-
-
-int _size(char *j)
+int _size(char *s)
 {
 	int j = 0;
 
@@ -25,38 +23,26 @@ int _size(char *j)
  * @str: char pointer
  * Return: char pointer
  */
-
 char *_strdup(char *str)
 {
-	if (str != NULL)
+	int i;
+	char *p = NULL;
+
+	if (str == NULL)
 	{
-		char *p;
-
-		unsigned long s;
-
-		int i;
-
-		s = (str);
-		p = (char *)malloc(sizeof(char) * (s + 1));
-		if (p != NULL)
-		{
-			i = 0;
-			while (str[i])
-			{
-				p[i] = str[i];
-				i++;
-			}
-
-			return (p);
-		}
-		else
-		{
-			return (NULL);
-		}
-	}
-	else
-	{
-
 		return (NULL);
 	}
+
+	p = malloc((_size(str) + 1) * sizeof(char));
+	if (p == NULL)
+	{
+		return (NULL);
+	}
+
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		p[i] = str[i];
+	}
+
+	return (p);
 }
