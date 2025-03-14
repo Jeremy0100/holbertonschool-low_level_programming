@@ -3,7 +3,7 @@
 
 char *create_array(unsigned int size, char c);
 
-int _size(char *j)
+int _size(char *j);
 
 char *_strdup(char *str);
 
