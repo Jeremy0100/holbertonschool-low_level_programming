@@ -1,6 +1,25 @@
 #include <string.h>
+#include <stdio.h>
 #include "main.h"
 
+/**
+ * _size - Calculates length
+ * @j: replace strlen
+ * Return: j
+ */
+
+
+int _size(char *j)
+{
+	int j = 0;
+
+	while (*s != '\0')
+	{
+		j++;
+		s++;
+	}
+	return (j);
+}
 /**
  * _strdup - Copy string
  * @str: char pointer
@@ -17,7 +36,6 @@ char *_strdup(char *str)
 
 		int i;
 
-		s = strlen(str);
 		p = (char *)malloc(sizeof(char) * (s + 1));
 		if (p != NULL)
 		{
