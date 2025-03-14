@@ -1,7 +1,5 @@
 #ifndef dog_h
 #define dog_h
-#include <stdlib.h>
-#include <stdio.h>
 
 /**
  * main - dog my_dog
